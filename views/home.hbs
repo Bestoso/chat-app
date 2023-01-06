@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="./js/visual.js" defer></script>
+    <script src="./js/socket.js" defer></script>
+    <title> {{ title }} </title>
+</head>
+<body>
+    {{>navbar }}
+
+    <form id="chat__container">
+        <div class="output">
+            <div class="actions"></div>
+        </div>
+        <input type="text" id="username" placeholder="Introduce your username">
+        <input type="text" id="message" placeholder="Introduce your message">
+        <input type="submit" id="sendMessage" value="Send Message">
+    </form>
+</body>
+</html>
